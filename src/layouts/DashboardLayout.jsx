@@ -31,7 +31,7 @@ import { useAuthStore } from "../store/authStore";
 
 const navigation = [
   { name: "Dashboard", href: "/dashboard", icon: HomeIcon },
-  { name: "Usuarios", href: "/dashboard/users", icon: UsersIcon },
+  { name: "Usuarios", href: "/users", icon: UsersIcon },
   {
     name: "Nuevo Análisis",
     href: "/dashboard/new-analysis",
@@ -60,7 +60,7 @@ export default function DashboardLayout({ children }) {
   };
 
   const userNavigation = [
-    { name: "Tu perfil", href: "#" },
+    { name: "Tu perfil", href: "/profile" },
     { name: "Cerrar sesión", onClick: handleLogout },
   ];
 
@@ -335,12 +335,12 @@ export default function DashboardLayout({ children }) {
                             {item.name}
                           </button>
                         ) : (
-                          <a
-                            href={item.href}
+                          <Link
+                            to={item.href}
                             className="block px-3 py-1 text-sm/6 text-gray-900 data-focus:bg-gray-50 data-focus:outline-hidden"
                           >
                             {item.name}
-                          </a>
+                          </Link>
                         )}
                       </MenuItem>
                     ))}
