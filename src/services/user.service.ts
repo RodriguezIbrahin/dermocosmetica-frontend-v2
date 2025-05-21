@@ -190,12 +190,7 @@ class UserService {
 
   async createUser(userData: CreateUserData): Promise<any> {
     try {
-      const token = localStorage.getItem("token");
-      if (!token) throw new Error("No hay token de autenticación");
-
-      const { data } = await api.post(ENDPOINTS.USERS.BASE, {
-        data: userData,
-      });
+      const { data } = await api.post(ENDPOINTS.USERS.BASE, userData);
       return data;
     } catch (error) {
       console.log("Error en createUser:", error);

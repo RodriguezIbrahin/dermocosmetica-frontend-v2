@@ -3,6 +3,7 @@ import SignIn from "../pages/SignIn";
 import Dashboard from "../pages/Dashboard";
 import Profile from "../pages/Profile";
 import Users from "../pages/Users";
+import CreateUser from "../pages/CreateUser";
 
 const AppRoutes = () => {
   return (
@@ -11,6 +12,7 @@ const AppRoutes = () => {
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/profile" element={<Profile />} />
       <Route path="/users" element={<Users />} />
+      <Route path="/users/create" element={<CreateUser />} />
       <Route path="/" element={<Navigate to="/signin" replace />} />
     </Routes>
   );
