@@ -21,6 +21,11 @@ export const ENDPOINTS = {
     BASE: "/clinics",
     BY_ID: (id: number) => `/clinics/${id}`,
   },
+  ANALYSIS: {
+    BY_USER: (userId: number) => `/analyses?filters[user][id][$eq]=${userId}`,
+    PROCESS_AUDIO: "/analyses/process-audio",
+    STATUS: (analysisId: string) => `/analyses/${analysisId}/status`,
+  },
 } as const;
 
 // Variables de entorno
