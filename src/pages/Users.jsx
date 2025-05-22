@@ -184,7 +184,7 @@ const Users = () => {
                 className="relative overflow-hidden rounded-lg bg-white px-4 pt-5 pb-5 shadow-sm sm:px-6 sm:pt-6"
               >
                 <dt>
-                  <div className="absolute rounded-md bg-rose-300 p-3">
+                  <div className="absolute rounded-md bg_rose p-3">
                     <item.icon
                       className="size-6 text-white"
                       aria-hidden="true"
@@ -240,7 +240,7 @@ const Users = () => {
               </h3>
               <button
                 onClick={() => navigate("/users/create")}
-                className="mt-2 ml-2 inline-flex items-center rounded-md bg-rose-400 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-rose-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-400"
+                className="mt-2 ml-2 inline-flex items-center rounded-md bg-rose-400 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg_rose focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-400"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

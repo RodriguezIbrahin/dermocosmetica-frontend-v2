@@ -287,7 +287,7 @@ const Dashboard = () => {
                 className="relative overflow-hidden rounded-lg bg-white px-4 pt-5 pb-5 shadow-sm sm:px-6 sm:pt-6"
               >
                 <dt>
-                  <div className="absolute rounded-md bg-rose-300 p-3">
+                  <div className="absolute rounded-md bg_rose p-3">
                     <item.icon
                       aria-hidden="true"
                       className="size-6 text-white"

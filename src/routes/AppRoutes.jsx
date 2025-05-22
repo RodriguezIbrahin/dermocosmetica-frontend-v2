@@ -4,6 +4,7 @@ import Dashboard from "../pages/Dashboard";
 import Profile from "../pages/Profile";
 import Users from "../pages/Users";
 import CreateUser from "../pages/CreateUser";
+import CreateAnalysis from "../pages/CreateAnalysis";
 
 const AppRoutes = () => {
   return (
@@ -13,6 +14,7 @@ const AppRoutes = () => {
       <Route path="/profile" element={<Profile />} />
       <Route path="/users" element={<Users />} />
       <Route path="/users/create" element={<CreateUser />} />
+      <Route path="/analysis/create" element={<CreateAnalysis />} />
       <Route path="/" element={<Navigate to="/signin" replace />} />
     </Routes>
   );

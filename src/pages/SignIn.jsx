@@ -109,7 +109,7 @@ const SignIn = () => {
               <button
                 type="submit"
                 disabled={isLoading}
-                className={`flex w-full justify-center rounded-md bg-rose-400 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-rose-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-400 ${
+                className={`flex w-full justify-center rounded-md bg-rose-400 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg_rose focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-400 ${
                   isLoading ? "opacity-50 cursor-not-allowed" : ""
                 }`}
               >

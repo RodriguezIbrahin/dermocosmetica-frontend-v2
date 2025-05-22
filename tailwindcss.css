@@ -1,1 +1,4 @@
 @import "tailwindcss";
+.bg_rose {
+  background-color: #d3858f;
+}

@@ -28,11 +28,7 @@ import { useAuthStore } from "../store/authStore";
 const navigation = [
   { name: "Dashboard", href: "/dashboard", icon: HomeIcon },
   { name: "Usuarios", href: "/users", icon: UsersIcon },
-  {
-    name: "Nuevo Análisis",
-    href: "/dashboard/new-analysis",
-    icon: ChartBarIcon,
-  },
+  { name: "Crear Análisis", href: "/analysis/create", icon: ChartBarIcon },
 ];
 
 function classNames(...classes) {
