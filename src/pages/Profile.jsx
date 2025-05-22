@@ -143,7 +143,7 @@ const Profile = () => {
                   <img
                     src={`https://ui-avatars.com/api/?name=${encodeURIComponent(
                       formData.username
-                    )}&background=random&size=96`}
+                    )}&background=d3858f&size=96`}
                     alt=""
                     className="size-24 rounded-full bg-gray-50"
                   />
@@ -184,7 +184,7 @@ const Profile = () => {
                             value={formData.username}
                             onChange={handleInputChange}
                             disabled={!isEditing}
-                            className="block w-full rounded-md border-0 pl-10 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 disabled:bg-gray-50 disabled:text-gray-500 disabled:ring-gray-200 sm:text-sm sm:leading-6"
+                            className="block w-full rounded-md border-0 pl-10 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-rose-400 disabled:bg-gray-50 disabled:text-gray-500 disabled:ring-gray-200 sm:text-sm sm:leading-6"
                           />
                         </div>
 
@@ -198,7 +198,7 @@ const Profile = () => {
                             onChange={handleInputChange}
                             disabled={!isEditing}
                             placeholder="Documento de Identidad"
-                            className="block w-full rounded-md border-0 pl-10 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 disabled:bg-gray-50 disabled:text-gray-500 disabled:ring-gray-200 sm:text-sm sm:leading-6"
+                            className="block w-full rounded-md border-0 pl-10 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-rose-400 disabled:bg-gray-50 disabled:text-gray-500 disabled:ring-gray-200 sm:text-sm sm:leading-6"
                           />
                         </div>
 
@@ -211,7 +211,7 @@ const Profile = () => {
                             value={formData.email}
                             onChange={handleInputChange}
                             disabled={!isEditing}
-                            className="block w-full rounded-md border-0 pl-10 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 disabled:bg-gray-50 disabled:text-gray-500 disabled:ring-gray-200 sm:text-sm sm:leading-6"
+                            className="block w-full rounded-md border-0 pl-10 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-rose-400 disabled:bg-gray-50 disabled:text-gray-500 disabled:ring-gray-200 sm:text-sm sm:leading-6"
                           />
                         </div>
 
@@ -224,7 +224,7 @@ const Profile = () => {
                             value={formData.phone}
                             onChange={handleInputChange}
                             disabled={!isEditing}
-                            className="block w-full rounded-md border-0 pl-10 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 disabled:bg-gray-50 disabled:text-gray-500 disabled:ring-gray-200 sm:text-sm sm:leading-6"
+                            className="block w-full rounded-md border-0 pl-10 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-rose-400 disabled:bg-gray-50 disabled:text-gray-500 disabled:ring-gray-200 sm:text-sm sm:leading-6"
                           />
                         </div>
                       </div>
@@ -290,7 +290,7 @@ const Profile = () => {
                             type="text"
                             value={user?.clinic?.name || ""}
                             disabled
-                            className="block w-full rounded-md border-0 pl-10 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 disabled:bg-gray-50 disabled:text-gray-500 disabled:ring-gray-200 sm:text-sm sm:leading-6"
+                            className="block w-full rounded-md border-0 pl-10 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-rose-400 disabled:bg-gray-50 disabled:text-gray-500 disabled:ring-gray-200 sm:text-sm sm:leading-6"
                           />
                         </div>
 
@@ -304,7 +304,7 @@ const Profile = () => {
                             onChange={handleInputChange}
                             disabled={!isEditing}
                             placeholder="Rol en la Clínica"
-                            className="block w-full rounded-md border-0 pl-10 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 disabled:bg-gray-50 disabled:text-gray-500 disabled:ring-gray-200 sm:text-sm sm:leading-6"
+                            className="block w-full rounded-md border-0 pl-10 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-rose-400 disabled:bg-gray-50 disabled:text-gray-500 disabled:ring-gray-200 sm:text-sm sm:leading-6"
                           />
                         </div>
 
@@ -318,7 +318,7 @@ const Profile = () => {
                             onChange={handleInputChange}
                             disabled={!isEditing}
                             placeholder="Dispositivo"
-                            className="block w-full rounded-md border-0 pl-10 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 disabled:bg-gray-50 disabled:text-gray-500 disabled:ring-gray-200 sm:text-sm sm:leading-6"
+                            className="block w-full rounded-md border-0 pl-10 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-rose-400 disabled:bg-gray-50 disabled:text-gray-500 disabled:ring-gray-200 sm:text-sm sm:leading-6"
                           />
                         </div>
 
@@ -352,7 +352,7 @@ const Profile = () => {
                                 href={user.clinic.website}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-indigo-600 hover:text-indigo-500"
+                                className="text-rose-400 hover:text-rose-300"
                               >
                                 {user.clinic.website}
                               </a>
@@ -379,7 +379,7 @@ const Profile = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="rounded-md bg-rose-400 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-rose-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-400 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {loading ? "Guardando..." : "Guardar"}
                 </button>

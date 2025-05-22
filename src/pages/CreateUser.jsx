@@ -97,7 +97,7 @@ export default function CreateUser() {
                       message: "El nombre debe tener al menos 3 caracteres",
                     },
                   })}
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-md sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-rose-400 sm:max-w-md sm:text-sm sm:leading-6"
                 />
                 {errors.username && (
                   <p className="mt-2 text-sm text-red-600">
@@ -125,7 +125,7 @@ export default function CreateUser() {
                       message: "Correo electrónico inválido",
                     },
                   })}
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-md sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-rose-400 sm:max-w-md sm:text-sm sm:leading-6"
                 />
                 {errors.email && (
                   <p className="mt-2 text-sm text-red-600">
@@ -153,7 +153,7 @@ export default function CreateUser() {
                       message: "La contraseña debe tener al menos 6 caracteres",
                     },
                   })}
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-md sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-rose-400 sm:max-w-md sm:text-sm sm:leading-6"
                 />
                 {errors.password && (
                   <p className="mt-2 text-sm text-red-600">
@@ -179,7 +179,7 @@ export default function CreateUser() {
                     validate: (value) =>
                       value === password || "Las contraseñas no coinciden",
                   })}
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-md sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-rose-400 sm:max-w-md sm:text-sm sm:leading-6"
                 />
                 {errors.confirmPassword && (
                   <p className="mt-2 text-sm text-red-600">
@@ -207,7 +207,7 @@ export default function CreateUser() {
                         "Por favor ingrese un número de teléfono válido (10 dígitos)",
                     },
                   })}
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-md sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-rose-400 sm:max-w-md sm:text-sm sm:leading-6"
                 />
                 {errors.phone && (
                   <p className="mt-2 text-sm text-red-600">
@@ -229,7 +229,7 @@ export default function CreateUser() {
                   type="text"
                   id="device"
                   {...register("device")}
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-md sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-rose-400 sm:max-w-md sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
@@ -247,7 +247,7 @@ export default function CreateUser() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="inline-flex justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="inline-flex justify-center rounded-md bg-rose-400 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-rose-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-400 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {isSubmitting ? (
               <span className="flex items-center">

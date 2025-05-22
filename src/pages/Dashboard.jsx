@@ -223,7 +223,7 @@ const Dashboard = () => {
           aria-current={pagination.page === i ? "page" : undefined}
           className={`inline-flex items-center border-t-2 px-4 pt-4 text-sm font-medium ${
             pagination.page === i
-              ? "border-indigo-500 text-indigo-600"
+              ? "border-rose-300 text-rose-400"
               : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
           }`}
         >
@@ -287,7 +287,7 @@ const Dashboard = () => {
                 className="relative overflow-hidden rounded-lg bg-white px-4 pt-5 pb-5 shadow-sm sm:px-6 sm:pt-6"
               >
                 <dt>
-                  <div className="absolute rounded-md bg-indigo-500 p-3">
+                  <div className="absolute rounded-md bg-rose-300 p-3">
                     <item.icon
                       aria-hidden="true"
                       className="size-6 text-white"
@@ -353,7 +353,7 @@ const Dashboard = () => {
           ) : (
             <>
               <ul role="list" className="divide-y divide-gray-100">
-                {analyses.map((analysis) => (
+                {analyses.map((analysis, index) => (
                   <li
                     key={analysis.id}
                     className="relative flex justify-between gap-x-6 px-4 py-5 hover:bg-gray-50 sm:px-6 lg:px-8 cursor-pointer"
@@ -364,7 +364,7 @@ const Dashboard = () => {
                         alt=""
                         src={`https://ui-avatars.com/api/?name=${encodeURIComponent(
                           analysis.patient?.username
-                        )}&background=random`}
+                        )}&background=${index % 2 === 0 ? "d4d4d4" : "d3858f"}`}
                         className="size-12 flex-none rounded-full bg-gray-50"
                       />
                       <div className="min-w-0 flex-auto">

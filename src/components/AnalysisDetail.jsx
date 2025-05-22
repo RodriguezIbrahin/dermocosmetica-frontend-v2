@@ -42,7 +42,7 @@ export default function AnalysisDetail({ analysis, open, onClose }) {
                       <button
                         type="button"
                         onClick={onClose}
-                        className="relative rounded-md bg-white text-gray-400 hover:text-gray-500 focus:ring-2 focus:ring-indigo-500"
+                        className="relative rounded-md bg-white text-gray-400 hover:text-gray-500 focus:ring-2 focus:ring-rose-300"
                       >
                         <span className="absolute -inset-2.5" />
                         <span className="sr-only">Cerrar panel</span>
@@ -62,7 +62,7 @@ export default function AnalysisDetail({ analysis, open, onClose }) {
                               alt=""
                               src={`https://ui-avatars.com/api/?name=${encodeURIComponent(
                                 analysis.patient?.username
-                              )}&background=random&size=256`}
+                              )}&background=d3858f&size=256`}
                               className="size-24 shrink-0 sm:size-40 lg:size-48"
                             />
                           </div>
@@ -91,7 +91,7 @@ export default function AnalysisDetail({ analysis, open, onClose }) {
                         <div className="mt-5 flex flex-wrap space-y-3 sm:space-y-0 sm:space-x-3">
                           <button
                             type="button"
-                            className="inline-flex w-full shrink-0 items-center justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:flex-1"
+                            className="inline-flex w-full shrink-0 items-center justify-center rounded-md bg-rose-400 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-rose-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-400 sm:flex-1"
                           >
                             Ver Resultados
                           </button>

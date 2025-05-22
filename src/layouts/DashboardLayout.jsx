@@ -12,11 +12,7 @@ import {
 import {
   Bars3Icon,
   BellIcon,
-  CalendarIcon,
-  ChartPieIcon,
   Cog6ToothIcon,
-  DocumentDuplicateIcon,
-  FolderIcon,
   HomeIcon,
   UsersIcon,
   XMarkIcon,
@@ -37,11 +33,6 @@ const navigation = [
     href: "/dashboard/new-analysis",
     icon: ChartBarIcon,
   },
-];
-
-const teams = [
-  { id: 1, name: "Dermocosmetica", href: "#", initial: "D", current: false },
-  { id: 2, name: "Avanti", href: "#", initial: "A", current: false },
 ];
 
 function classNames(...classes) {
@@ -97,7 +88,7 @@ export default function DashboardLayout({ children }) {
                   </button>
                 </div>
               </TransitionChild>
-              <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-gray-900 px-6 pb-4 ring-1 ring-white/10">
+              <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-neutral-300 px-6 pb-4 ring-1 ring-white/10">
                 <div className="flex h-16 shrink-0 items-center">
                   <img
                     className="h-14 w-auto"
@@ -115,8 +106,8 @@ export default function DashboardLayout({ children }) {
                               to={item.href}
                               className={classNames(
                                 location.pathname === item.href
-                                  ? "bg-gray-800 text-white"
-                                  : "text-gray-400 hover:bg-gray-800 hover:text-white",
+                                  ? "bg-neutral-400 text-white"
+                                  : "text-gray-600 hover:bg-neutral-400 hover:text-white",
                                 "group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold"
                               )}
                             >
@@ -130,35 +121,11 @@ export default function DashboardLayout({ children }) {
                         ))}
                       </ul>
                     </li>
-                    <li>
-                      <div className="text-xs/6 font-semibold text-gray-400">
-                        Tus equipos
-                      </div>
-                      <ul role="list" className="-mx-2 mt-2 space-y-1">
-                        {teams.map((team) => (
-                          <li key={team.name}>
-                            <a
-                              href={team.href}
-                              className={classNames(
-                                team.current
-                                  ? "bg-gray-800 text-white"
-                                  : "text-gray-400 hover:bg-gray-800 hover:text-white",
-                                "group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold"
-                              )}
-                            >
-                              <span className="flex size-6 shrink-0 items-center justify-center rounded-lg border border-gray-700 bg-gray-800 text-[0.625rem] font-medium text-gray-400 group-hover:text-white">
-                                {team.initial}
-                              </span>
-                              <span className="truncate">{team.name}</span>
-                            </a>
-                          </li>
-                        ))}
-                      </ul>
-                    </li>
+
                     <li className="mt-auto">
                       <Link
                         to="/dashboard/settings"
-                        className="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold text-gray-400 hover:bg-gray-800 hover:text-white"
+                        className="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold text-gray-600 hover:bg-neutral-400 hover:text-white"
                       >
                         <Cog6ToothIcon
                           aria-hidden="true"
@@ -176,7 +143,7 @@ export default function DashboardLayout({ children }) {
 
         {/* Static sidebar for desktop */}
         <div className="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
-          <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-gray-900 px-6 pb-4">
+          <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-neutral-300 px-6 pb-4">
             <div className="flex h-16 shrink-0 items-center">
               <img
                 className="h-16 w-auto"
@@ -194,8 +161,8 @@ export default function DashboardLayout({ children }) {
                           to={item.href}
                           className={classNames(
                             location.pathname === item.href
-                              ? "bg-gray-800 text-white"
-                              : "text-gray-400 hover:bg-gray-800 hover:text-white",
+                              ? "bg-neutral-400 text-white"
+                              : "text-gray-600 hover:bg-neutral-400 hover:text-white",
                             "group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold"
                           )}
                         >
@@ -209,35 +176,11 @@ export default function DashboardLayout({ children }) {
                     ))}
                   </ul>
                 </li>
-                <li>
-                  <div className="text-xs/6 font-semibold text-gray-400">
-                    Tus equipos
-                  </div>
-                  <ul role="list" className="-mx-2 mt-2 space-y-1">
-                    {teams.map((team) => (
-                      <li key={team.name}>
-                        <a
-                          href={team.href}
-                          className={classNames(
-                            team.current
-                              ? "bg-gray-800 text-white"
-                              : "text-gray-400 hover:bg-gray-800 hover:text-white",
-                            "group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold"
-                          )}
-                        >
-                          <span className="flex size-6 shrink-0 items-center justify-center rounded-lg border border-gray-700 bg-gray-800 text-[0.625rem] font-medium text-gray-400 group-hover:text-white">
-                            {team.initial}
-                          </span>
-                          <span className="truncate">{team.name}</span>
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </li>
+
                 <li className="mt-auto">
                   <Link
                     to="/dashboard/settings"
-                    className="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold text-gray-400 hover:bg-gray-800 hover:text-white"
+                    className="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold text-gray-600 hover:bg-neutral-400 hover:text-white"
                   >
                     <Cog6ToothIcon
                       aria-hidden="true"
@@ -270,22 +213,22 @@ export default function DashboardLayout({ children }) {
 
             <div className="flex flex-1 gap-x-4 self-stretch lg:gap-x-6">
               <form action="#" method="GET" className="grid flex-1 grid-cols-1">
-                <input
+                {/* <input
                   name="search"
                   type="search"
                   placeholder="Buscar..."
                   aria-label="Search"
-                  className="col-start-1 row-start-1 block size-full bg-white pl-8 text-base text-gray-900 outline-hidden placeholder:text-gray-400 sm:text-sm/6"
+                  className="col-start-1 row-start-1 block size-full bg-white pl-8 text-base text-gray-900 outline-hidden placeholder:text-gray-600 sm:text-sm/6"
                 />
                 <MagnifyingGlassIcon
                   aria-hidden="true"
-                  className="pointer-events-none col-start-1 row-start-1 size-5 self-center text-gray-400"
-                />
+                  className="pointer-events-none col-start-1 row-start-1 size-5 self-center text-gray-600"
+                /> */}
               </form>
               <div className="flex items-center gap-x-4 lg:gap-x-6">
                 <button
                   type="button"
-                  className="-m-2.5 p-2.5 text-gray-400 hover:text-gray-500"
+                  className="-m-2.5 p-2.5 text-gray-600 hover:text-gray-500"
                 >
                   <span className="sr-only">Ver notificaciones</span>
                   <BellIcon aria-hidden="true" className="size-6" />
@@ -305,7 +248,7 @@ export default function DashboardLayout({ children }) {
                       alt=""
                       src={`https://ui-avatars.com/api/?name=${
                         user?.username || "User"
-                      }&background=random`}
+                      }&background=d3858f`}
                       className="size-8 rounded-full bg-gray-50"
                     />
                     <span className="hidden lg:flex lg:items-center">
@@ -317,7 +260,7 @@ export default function DashboardLayout({ children }) {
                       </span>
                       <ChevronDownIcon
                         aria-hidden="true"
-                        className="ml-2 size-5 text-gray-400"
+                        className="ml-2 size-5 text-gray-600"
                       />
                     </span>
                   </MenuButton>
